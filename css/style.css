@@ -1,0 +1,397 @@
+* { margin:0px;padding:0px;}
+ul { list-style:none;}
+a { text-decoration:none;}
+img { border:none;}
+
+
+/***************************************/
+/* header */
+
+.headerBg{
+    background-image: url(../img/bgHeader.png);
+    background-repeat: repeat-x;
+}
+
+.headerBg header{
+    width: 940px; height: 118px; margin: 0 auto;
+    position: relative;
+    
+}
+
+/* left ul */
+
+.headerBg header .left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.headerBg header .left li{float: left;}
+
+.headerBg header .left li a{
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    height: 37px;
+}
+
+.headerBg header .left li:nth-child(1) > a {
+    background-image: url(../img/btnTop1.png);
+    width: 183px;
+}
+
+.headerBg header .left li:nth-child(2) > a {
+    background-image: url(../img/btnTop2.png);
+    width: 182px;
+}
+
+
+/* right ul */
+
+.headerBg header .right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.headerBg header .right li{float: left;}
+
+.headerBg header .right li a{
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    height: 37px;
+}
+
+.headerBg header .right li:nth-child(1) > a {
+    background-image: url(../img/btnUtil1.png);
+    width: 52px;
+}
+
+.headerBg header .right li:nth-child(2) > a {
+    background-image: url(../img/btnUtil2.png);
+    width: 41px;
+}
+
+.headerBg header .right li:nth-child(3) > a {
+    background-image: url(../img/btnUtil3.png);
+    width: 69px;
+}
+
+.headerBg header .right li:nth-child(4) > a {
+    background-image: url(../img/btnUtil4.png);
+    width: 110px;
+}
+
+.headerBg header .right li:nth-child(5) > a {
+    background-image: url(../img/btnUtil5.png);
+    width: 67px;
+}
+
+.headerBg header .right li:nth-child(6) > a {
+    background-image: url(../img/btnSearch.png);
+    width: 40px;
+}
+
+/* top Logo 1과 2 */
+
+.headerBg header .topLogo1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    width: 183px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/logo.png);
+}
+.headerBg header .topLogo2 {
+    position: absolute;
+    bottom: 0px;
+    left: 183px;
+    display: block;
+    width: 182px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/visualHeader.png);
+}
+
+
+
+/* gnb */
+
+.headerBg header .gnb >li {float: left;}
+
+.headerBg header .gnb >li >a{
+    display: block;
+    width:120px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    text-indent: -9999px;
+    transition: all 0.3s;
+}
+
+.headerBg header .gnb >li:hover >a{ background-position: 0px -60px; }
+
+.gnb{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.headerBg header .gnb > li:nth-child(1) > a{background-image: url(../img/gnb1.png);}
+.headerBg header .gnb > li:nth-child(2) > a{background-image: url(../img/gnb2.png);}
+.headerBg header .gnb > li:nth-child(3) > a{background-image: url(../img/gnb3.png);}
+.headerBg header .gnb > li:nth-child(4) > a{background-image: url(../img/gnb4.png);}
+
+
+
+/* header ul의 div */
+
+.gnb > li > div{
+    width: 940px;
+    height: 196px;
+    background-color: rgba(51,51,51,0.8);
+    position: absolute; /*li가 아니라 .gnb에 기준!*/
+/*    top:;*/
+    right:0px; /*left가 아니라 right!!!!!*/
+    display:none;
+    background-repeat: no-repeat;
+/*    text-indent: -9999px;*/
+}
+
+.gnb > li:nth-child(1) > div{background-image: url(../img/gnb1-1.png);}
+.gnb > li:nth-child(2) > div{background-image: url(../img/gnb2-1.png);}
+.gnb > li:nth-child(3) > div{background-image: url(../img/gnb3-1.png);}
+.gnb > li:nth-child(4) > div{background-image: url(../img/gnb4-1.png);}
+
+
+/* gnb > li > ul */
+
+.gnb > li > div > ul{
+    position: absolute;
+    right: 50px;
+    top:20px;
+    width: 400px;
+    /*border-top: 1px solid #dadada;*/
+    padding-top: 10px;
+    margin-top: 20px;
+    z-index: 6;
+}
+
+.gnb > li > div > ul > li{float: left;    margin-bottom: 20px;}
+
+.gnb > li > div > ul > li > a {
+    color: #f9f9f9;
+    margin-right:100px;
+    transition: all 0.7s;
+}
+.gnb > li > div > ul > li:nth-child(2n) a{margin-right: 0px;}
+.gnb > li > div > ul > li > a:hover { color : orange;}
+
+
+
+/***************************************/
+
+
+.sec2 {
+    width: 100%; height: 78px;
+}
+
+.sec2 .header2{
+    width: 940px; height: 78px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sec2 .header2 .ul1 {
+    left: 0;
+    bottom: 0px;
+    height: 78px;
+}
+.sec2 .header2 .ul1 li{
+    float: left;
+    height: 78px;
+    line-height: 78px;
+    width: 180px;
+    padding-top: 3px;
+    box-sizing: border-box;
+}
+.sec2 .header2 .ul1 li:first-child{
+    padding-top: 15px;
+    box-sizing: border-box;}
+
+
+
+.sec2 .header2 .ul3 li{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+
+.sec2 .header2 .ul3 a{
+    display: block;
+    width: 120px;
+    height: 60px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    transition: all 0.5s;
+}
+
+.sec2 .header2 .ul3 .gnb1 {background-image: url(img/gnb1.png);}
+.sec2 .header2 .ul3 .gnb2 {background-image: url(img/gnb2.png);}
+.sec2 .header2 .ul3 .gnb3 {background-image: url(img/gnb3.png);}
+.sec2 .header2 .ul3 .gnb4 {background-image: url(img/gnb4.png);}
+
+
+.sec2 .header2 .ul3 .gnb1:hover{background-position: 0px -60px;}
+.sec2 .header2 .ul3 .gnb2:hover{background-position: 0px -60px;}
+.sec2 .header2 .ul3 .gnb3:hover{background-position: 0px -60px;}
+.sec2 .header2 .ul3 .gnb4:hover{background-position: 0px -60px;}
+
+.sec2 .header2 .ul3{
+    right:0;
+    position: absolute;
+    bottom: 0;
+}
+
+/*********************************************************/
+
+.sec3 {
+    width: 940px; height: 105px;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.sec4 {
+    width: 940px; height: 325px;
+    background-color: #f6f5f1;
+    margin: 0 auto;
+    padding:  17px 0px 20px 30px ;
+    box-sizing: border-box;
+}
+.sec4 .tit1 {
+    float: left;
+    margin: 0 auto; width: 150px;
+}
+.sec4 .tit1 ul {
+    width: 50px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.sec4 .tit1 ul li a{
+    display: block;
+    width: 60px; height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.sec4 .tit1 ul li:hover a{
+    background-color: #333;
+    color:#fff;
+}
+
+
+
+
+.sec5 {
+    padding-top: 50px;
+    box-sizing: border-box;
+    height: 350px;
+    width: 940px;
+    margin: 0 auto;
+}
+.sec5 ul{margin-top: 10px;}
+.sec5 ul li{float: left; margin-right: 18px; width:300px;}
+.sec5 ul li:last-child{margin-right:0;}
+.sec5 ul li h4 a{color:#000;margin-top: 20px;margin-bottom: 10px;}
+.sec5 ul li p a{color:#000;font-size: 12px;line-height: 1.5;}
+
+/***********************************************************/
+
+.sec6{
+    padding-top: 50px;
+    box-sizing: border-box;
+    width: 940px;
+    margin: 0 auto;
+    height: 320px;
+
+    
+}
+.sec6 .div1 {
+    position: relative;
+    width: 460px; height: 200px;
+    float: left;
+}
+.sec6 .div1 ul {width: 450px; height: 200px; float: left;}
+.sec6 .div1 .more {position: absolute; right: 0;}
+.sec6 .div1 ul li{float: left; margin-right: 10px;}
+.sec6 .div1 ul li:last-child{margin-right: 0;}
+
+.sec6 .div2 {
+    width: 450px; height: 200px;
+    float: right;
+    color: #666;
+    font-size: 13px;
+}
+
+
+.sec6 .div2 .ul5{
+    width: 450px;  
+    height: 200px;
+    float: left;
+}
+.sec6 .div2 .ul5 li a{color: #000;}
+.sec6 .div2 p {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.sec6 .div2 .ul5 p span{
+    font-size: 12px;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+/***********************************************************/
+
+
+.sec7 {
+    width: 100%;
+    background-color: #373737;
+    height: 50px;
+}
+.sec7 ul li {float: left;}
+
+.sec7 .foot1 {
+    width: 940px;
+    height: 50px;
+    margin: 0 auto;
+}
+.sec7 .foot1 li:last-child{float: right;}
+
+.sec7 .foot2Wrap{
+    width: 100%;
+    height: 140px;
+    background-color: #2f2f2f;
+}
+
+.sec7 .foot2{
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 940px;
+    height: 140px;
+    margin: 0 auto;
+    color: #999;
+    line-height: 1.6;
+    font-size: 13px;
+}
